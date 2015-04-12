@@ -1,4 +1,9 @@
-  best <- function(state, outcome){
+#@author : Mayur k
+#@email : mayurkadu9@gmail.com
+
+#Function to return best hospital for given outcome in a state
+best <- function(state, outcome){
+    # read csv file
   data <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
   hospState <- data[,7]
   
